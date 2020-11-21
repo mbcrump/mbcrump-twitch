@@ -1,0 +1,824 @@
+creds
+
+un century1
+pw century1 
+
+ century.underthewire.tech, on port 22. 
+
+ C:\Windows\System32\WindowsPowerShell\v1.0\Microsoft.PowerShell_profile.ps1
+
+ C:\Windows\System32\WindowsPowerShell\v1.0\
+
+ssh century1@century.underthewire.tech 22 "cd /directory_wanted ; bash --login"
+ "cd /directory_wanted ; bash --login"
+
+ correct -> ssh century1@century.underthewire.tech
+
+PS C:\users\century1\desktop> $PSVersionTable
+
+Name                           Value                                                               
+----                           -----                                                               
+PSVersion                      5.1.14393.3866                                                      
+PSEdition                      Desktop                                                             
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                                             
+BuildVersion                   10.0.14393.3866                                                     
+CLRVersion                     4.0.30319.42000                                                     
+WSManStackVersion              3.0                                                                 
+PSRemotingProtocolVersion      2.3                                                                 
+SerializationVersion           1.1.0.1                                                             
+
+
+invoke-webrequest443
+
+
+PS C:\users\century2\desktop> dir
+
+
+    Directory: C:\users\century2\desktop
+
+
+Mode                LastWriteTime         Length Name                                              
+----                -------------         ------ ----                                              
+-a----        8/30/2018   3:29 AM            693 443                                               
+
+
+PS C:\users\century3\desktop> $a = dir                                                              
+PS C:\users\century3\desktop> $a.count                                                              
+123                                                                                                 
+PS C:\users\century3\desktop> Write-Host @( Get-ChildItem c:\users\century3\desktop ).Count;        
+123                                                                                                 
+PS C:\users\century3\desktop>                                                                       
+                                                                                                    
+canyouopenme
+
+                                                                                                    
+           
+                                                                                                    
+PS C:\users\century4\desktop> cd '.\Can You Open Me'                                                
+PS C:\users\century4\desktop\Can You Open Me> dir                                                   
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century4\desktop\Can You Open Me                                            
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+-a----        8/30/2018   3:29 AM             24 61580                                              
+
+
+            PS C:\users\century5\desktop> dir
+
+
+    Directory: C:\users\century5\desktop
+
+
+Mode                LastWriteTime         Length Name                                              
+----                -------------         ------ ----                                              
+-a----        8/30/2018   3:29 AM             54 3347                                              
+
+                                                                                                                                                                                                                         
+PS C:\users\century5\desktop> Get-WmiObject Win32_ComputerSystem
+
+
+Domain              : underthewire.tech
+Manufacturer        : OpenStack Foundation
+Model               : OpenStack Nova
+Name                : UTW
+PrimaryOwnerName    : UTW_Team
+TotalPhysicalMemory : 12582359040
+                                                                                                    
+                                                                                                    
+                                                                                                    
+PS C:\users\century5\desktop> (Get-WmiObject Win32_ComputerSystem).Domain                           
+underthewire.tech                                                                                   
+PS C:\users\century5\desktop>    
+
+
+underthewire3347
+
+
+                                                                                                    
+PS C:\users\century6\desktop> $a = dir                                                              
+PS C:\users\century6\desktop> $a.count                                                              
+197    
+
+
+   Directory: C:\users\century7\Downloads                                                          
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+-a----        8/30/2018   3:29 AM              7 Readme.txt                                         
+                                                                                                    
+                                                                                                    
+PS C:\users\century7\Downloads> cat .\Readme.txt                                                    
+7points                                                                                             
+PS C:\users\century7\Downloads>                                                                     
+
+transbaikalian                                                                                      
+PS C:\users\century8\desktop> dir                                                                   
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century8\desktop                                                            
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+-a----        8/30/2018   3:33 AM          15858 unique.txt                                         
+                                                                                                    
+                                                                                                    
+PS C:\users\century8\desktop> $a = .\unique.txt                                                     
+PS C:\users\century8\desktop> $a.count                                                              
+0                                                                                                   
+PS C:\users\century8\desktop> (Get-Content C:\users\century8\desktop\unique.txt).Length             
+696     
+
+
+
+$content = [IO.File]::ReadAllText(".\desktop-file.txt") 
+
+[160] ??
+
+
+                                                                                                    
+PS C:\users\century9\desktop> $content = [IO.File]::ReadAllText(".\Word_File.txt")                  
+PS C:\users\century9\desktop> $content.split()[160]                                                 
+pierid                                                                                              
+PS C:\users\century9\desktop>     
+
+                                                                                                
+PS C:\users\century10\desktop> Get-WmiObject win32_service | select * | where DisplayName -like "Win
+dows Update*"                                                                                       
+                                                                                                    
+                                                                                                    
+PSComputerName          : UTW                                                                       
+Name                    : wuauserv                                                                  
+Status                  : OK                                                                        
+ExitCode                : 0                                                                         
+DesktopInteract         : False                                                                     
+ErrorControl            : Normal                                                                    
+PathName                : C:\Windows\system32\svchost.exe -k netsvcs                                
+ServiceType             : Share Process                                                             
+StartMode               : Manual                                                                    
+__GENUS                 : 2                                                                         
+__CLASS                 : Win32_Service                                                             
+__SUPERCLASS            : Win32_BaseService                                                         
+__DYNASTY               : CIM_ManagedSystemElement                                                  
+__RELPATH               : Win32_Service.Name="wuauserv"                                             
+__PROPERTY_COUNT        : 26                                                                        
+__DERIVATION            : {Win32_BaseService, CIM_Service, CIM_LogicalElement,                      
+                          CIM_ManagedSystemElement}                                                 
+__SERVER                : UTW                                                                       
+__NAMESPACE             : root\cimv2                                                                
+__PATH                  : \\UTW\root\cimv2:Win32_Service.Name="wuauserv"                            
+AcceptPause             : False                                                                     
+AcceptStop              : True                                                                      
+Caption                 : Windows Update                                                            
+CheckPoint              : 0                                                                         
+CreationClassName       : Win32_Service                                                             
+DelayedAutoStart        : False                                                                     
+Description             : Enables the detection, download, and installation of updates for Windows  
+                          and other programs. If this service is disabled, users of this computer   
+                          will not be able to use Windows Update or its automatic updating          
+                          feature, and programs will not be able to use the Windows Update Agent    
+                          (WUA) API.                                                                
+DisplayName             : Windows Update                                                            
+InstallDate             :                                                                           
+ProcessId               : 1188                                                                      
+ServiceSpecificExitCode : 0                                                                         
+Started                 : True                                                                      
+StartName               : LocalSystem                                                               
+State                   : Running                                                                   
+SystemCreationClassName : Win32_ComputerSystem                                                      
+SystemName              : UTW                                                                       
+TagId                   : 0                                                                         
+WaitHint                : 0                                                                         
+Scope                   : System.Management.ManagementScope                                         
+Path                    : \\UTW\root\cimv2:Win32_Service.Name="wuauserv"                            
+Options                 : System.Management.ObjectGetOptions                                        
+ClassPath               : \\UTW\root\cimv2:Win32_Service                                            
+Properties              : {AcceptPause, AcceptStop, Caption, CheckPoint...}                         
+SystemProperties        : {__GENUS, __CLASS, __SUPERCLASS, __DYNASTY...}                            
+Qualifiers              : {dynamic, Locale, provider, UUID}                                         
+Site                    :                                                                           
+Container               :                                                                           
+                                                                                                    
+                                                                                                    
+                                                                                                    
+PS C:\users\century10\desktop>                                                                      
+
+
+
+windowsupdates110
+
+
+                                                                                                    
+    Directory: C:\users\century11\AppData\Local\Microsoft\InputPersonalization                      
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        7/16/2016   1:23 PM                TrainedDataStore                                   
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Local\Microsoft\Windows                                   
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        7/16/2016   1:23 PM                GameExplorer                                       
+d---s-        7/16/2016   1:23 PM                History                                            
+d---s-        7/16/2016   1:23 PM                INetCache                                          
+d---s-        7/16/2016   1:23 PM                INetCookies                                        
+d-----        7/16/2016   1:23 PM                Shell                                              
+d--hsl        8/30/2018   3:11 AM                Temporary Internet Files                           
+d-----        7/16/2016   1:23 PM                WinX                                               
+-a-h--        8/30/2018   3:11 AM           8192 UsrClass.dat                                       
+-a-hs-        8/30/2018   3:11 AM           8192 UsrClass.dat.LOG1                                  
+-a-hs-        8/30/2018   3:11 AM           8192 UsrClass.dat.LOG2                                  
+-a-hs-        8/30/2018   3:11 AM          65536 UsrClass.dat{d82669b3-abff-11e8-90ee-e14c26db97e8} 
+                                                 .TM.blf                                            
+-a-hs-        8/30/2018   3:11 AM         524288 UsrClass.dat{d82669b3-abff-11e8-90ee-e14c26db97e8} 
+                                                 .TMContainer00000000000000000001.regtrans-ms       
+-a-hs-        8/30/2018   3:11 AM         524288 UsrClass.dat{d82669b3-abff-11e8-90ee-e14c26db97e8} 
+                                                 .TMContainer00000000000000000002.regtrans-ms       
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Local\Microsoft\Windows\Shell                             
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+-a----        7/16/2016   1:21 PM          81382 DefaultLayouts.xml                                 
+Get-ChildItem : Access to the path 'C:\users\century11\AppData\Local\Microsoft\Windows\Temporary    
+Internet Files' is denied.                                                                          
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\centur... Internet Files:String) [Get-Ch  
+   ildItem], UnauthorizedAccessException                                                            
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Local\Microsoft\Windows\WinX                              
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-r---        7/16/2016   1:23 PM                Group1                                             
+d-r---        7/16/2016   1:23 PM                Group2                                             
+d-r---        7/16/2016   1:23 PM                Group3                                             
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Local\Microsoft\Windows\WinX\Group1                       
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+-a----        7/16/2016   1:18 PM           1109 1 - Desktop.lnk                                    
+-a-hs-        7/16/2016   1:21 PM             75 desktop.ini                                        
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Local\Microsoft\Windows\WinX\Group2                       
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+-a----        7/16/2016   1:18 PM           1109 1 - Run.lnk                                        
+-a----        7/16/2016   1:18 PM           1109 2 - Search.lnk                                     
+-a----        7/16/2016   1:18 PM           1109 3 - Windows Explorer.lnk                           
+-a----        7/16/2016   1:18 PM           1015 4 - Control Panel.lnk                              
+-a----        7/16/2016   1:18 PM           1021 5 - Task Manager.lnk                               
+-a-hs-        7/16/2016   1:21 PM            325 desktop.ini                                        
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Local\Microsoft\Windows\WinX\Group3                       
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+-a----        7/16/2016   1:18 PM           1015 01 - Command Prompt.lnk                            
+-a----        7/16/2016   1:18 PM           1127 01a - Windows PowerShell.lnk                       
+-a----        7/16/2016   1:18 PM           1059 02 - Command Prompt.lnk                            
+-a----        7/16/2016   1:18 PM           1171 02a - Windows PowerShell.lnk                       
+-a----        7/16/2016   1:18 PM           1015 03 - Computer Management.lnk                       
+-a----        7/16/2016   1:18 PM           1015 04 - Disk Management.lnk                           
+-a----        7/16/2016   1:18 PM           1097 04-1 - Network Connections.lnk                     
+-a----        7/16/2016   1:18 PM           1075 05 - Device Manager.lnk                            
+-a----        7/16/2016   1:18 PM           1061 06 - System.lnk                                    
+-a----        7/16/2016   1:18 PM           1015 07 - Event Viewer.lnk                              
+-a----        7/16/2016   1:18 PM           1073 08 - Power Options.lnk                             
+-a----        7/16/2016   1:18 PM           1015 09 - Mobility Center.lnk                           
+-a----        7/16/2016   1:18 PM           1087 10 - Programs and Features.lnk                     
+-a-hs-        7/16/2016   1:21 PM            948 desktop.ini                                        
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Local\Microsoft\Windows Sidebar                           
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        7/16/2016   1:23 PM                Gadgets                                            
+-a----        7/16/2016   1:21 PM             80 settings.ini                                       
+Get-ChildItem : Access to the path 'C:\users\century11\AppData\Local\Temporary Internet Files' is   
+denied.                                                                                             
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\centur... Internet Files:String) [Get-Ch  
+   ildItem], UnauthorizedAccessException                                                            
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\LocalLow                                                  
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----         2/2/2019   6:34 PM                Microsoft                                          
+d-----        7/12/2020  10:52 PM                Temp                                               
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\LocalLow\Microsoft                                        
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----         2/2/2019   6:34 PM                CryptnetFlushCache                                 
+d-----         2/2/2019   6:34 PM                CryptnetUrlCache                                   
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\LocalLow\Microsoft\CryptnetFlushCache                     
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        12/6/2019  11:46 AM                MetaData                                           
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\LocalLow\Microsoft\CryptnetFlushCache\MetaData            
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+------        12/6/2019  11:46 AM            256 73F8A78CFE7EC137D8D7087CFD36FB4A                   
+------         2/2/2019   6:34 PM            256 DDB0467F8AF11FE218CF6AED740466D0                   
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\LocalLow\Microsoft\CryptnetUrlCache                       
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        7/11/2020   4:10 PM                Content                                            
+d-----        7/11/2020   4:10 PM                MetaData                                           
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\LocalLow\Microsoft\CryptnetUrlCache\Content               
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+------         2/2/2019   6:34 PM              0 57C8EDB95DF3F0AD4EE2DC2B8CFD4157                   
+------        6/17/2020   4:15 PM           1507 6BADA8974A10C4BD62CC921D13E43B18_88614FFAD35D35342 
+                                                 1B8A7E1FE18FCE4                                    
+------         7/4/2020  12:32 AM           1507 6BADA8974A10C4BD62CC921D13E43B18_C9FB72B5AE80778A0 
+                                                 8024D8B0FDECC6F                                    
+------        6/21/2020   1:11 PM           1507 6BADA8974A10C4BD62CC921D13E43B18_D9817BD5013875AD5 
+                                                 17DA73475345203                                    
+------        7/11/2020   4:10 PM            471 7423F88C7F265F0DEFC08EA88C3BDE45_D975BBA8033175C8D 
+                                                 112023D8A7A8AD6                                    
+------         2/2/2019   6:34 PM              0 77EC63BDA74BD0D0E0426DC8F8008506                   
+------         2/2/2019   6:34 PM              0 FB0D848F74F70BB2EAA93746D24D9749                   
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData              
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+------        7/12/2020  10:49 PM            302 57C8EDB95DF3F0AD4EE2DC2B8CFD4157                   
+------        6/17/2020   4:15 PM            434 6BADA8974A10C4BD62CC921D13E43B18_88614FFAD35D35342 
+                                                 1B8A7E1FE18FCE4                                    
+------         7/4/2020  12:32 AM            442 6BADA8974A10C4BD62CC921D13E43B18_C9FB72B5AE80778A0 
+                                                 8024D8B0FDECC6F                                    
+------        6/21/2020   1:11 PM            438 6BADA8974A10C4BD62CC921D13E43B18_D9817BD5013875AD5 
+                                                 17DA73475345203                                    
+------        7/11/2020   4:10 PM            434 7423F88C7F265F0DEFC08EA88C3BDE45_D975BBA8033175C8D 
+                                                 112023D8A7A8AD6                                    
+------        7/12/2020  10:49 PM            290 77EC63BDA74BD0D0E0426DC8F8008506                   
+------        7/12/2020  10:49 PM            290 FB0D848F74F70BB2EAA93746D24D9749                   
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming                                                   
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        5/22/2019  10:53 AM                Microsoft                                          
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft                                         
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        7/16/2016   1:23 PM                Internet Explorer                                  
+d-----        5/22/2019  10:53 AM                Protect                                            
+d-----        8/30/2018  11:14 PM                Windows                                            
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Internet Explorer                       
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        7/16/2016   1:23 PM                Quick Launch                                       
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch          
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+------        7/16/2016   1:19 PM           1259 Control Panel.lnk                                  
+------        7/16/2016   1:21 PM            270 desktop.ini                                        
+------        7/16/2016   1:19 PM           1158 Server Manager.lnk                                 
+------        7/16/2016   1:18 PM            352 Shows Desktop.lnk                                  
+------        7/16/2016   1:18 PM            334 Window Switcher.lnk                                
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Protect                                 
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        5/22/2019  10:53 AM                S-1-5-21-758131494-606461608-3556270690-1114       
+------        5/22/2019  10:53 AM             24 CREDHIST                                           
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Protect\S-1-5-21-758131494-606461608-35 
+    56270690-1114                                                                                   
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+------        5/22/2019  10:53 AM            740 2c2d6612-0008-4e2a-8799-e57f7a00fb27               
+------        5/22/2019  10:53 AM            928 BK-underthewire                                    
+------        5/22/2019  10:53 AM             24 Preferred                                          
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Windows                                 
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        7/16/2016   1:23 PM                CloudStore                                         
+d-----        7/16/2016   1:23 PM                Network Shortcuts                                  
+d-----        8/30/2018  11:14 PM                PowerShell                                         
+d-----        7/16/2016   1:23 PM                Printer Shortcuts                                  
+d-----         2/9/2020   4:41 PM                Recent                                             
+d-----        7/16/2016   1:23 PM                SendTo                                             
+d-r---        7/16/2016   1:23 PM                Start Menu                                         
+d-----        7/16/2016   1:23 PM                Templates                                          
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Windows\CloudStore                      
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        7/16/2016   1:23 PM                Store                                              
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Windows\PowerShell                      
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----        5/18/2020   6:12 PM                PSReadline                                         
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline           
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+------        5/18/2020   6:12 PM             86 ConsoleHost_history.txt                            
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Windows\Recent                          
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d-----         2/9/2020   4:41 PM                CustomDestinations                                 
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations       
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+------         2/9/2020   4:41 PM           6172 590aee7bdd69b59b.customDestinations-ms             
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\AppData\Roaming\Microsoft\Windows\SendTo                          
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+------        7/16/2016   1:21 PM              3 Compressed (zipped) Folder.ZFSendToTarget          
+------        7/16/2016   1:21 PM              7 Desktop (create shortcut).DeskLink                 
+------        7/16/2016   1:21 PM            440 Desktop.ini                                        
+------        7/16/2016   1:21 PM              4 Mail Recipient.MAPIMail                            
+Get-ChildItem : Access to the path 'C:\users\century11\AppData\Roaming\Microsoft\Windows\Start      
+Menu' is denied.                                                                                    
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\centur...dows\Start Menu:String) [Get-Ch  
+   ildItem], UnauthorizedAccessException                                                            
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\Application Data' is denied.                 
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\Application Data:String) [Get-  
+   ChildItem], UnauthorizedAccessException                                                          
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\Cookies' is denied.                          
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\Cookies:String) [Get-ChildItem  
+   ], UnauthorizedAccessException                                                                   
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\Documents                                                         
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+d--hsl        8/30/2018   3:11 AM                My Music                                           
+d--hsl        8/30/2018   3:11 AM                My Pictures                                        
+d--hsl        8/30/2018   3:11 AM                My Videos                                          
+d-----        6/16/2020  12:17 AM                WindowsPowerShell                                  
+Get-ChildItem : Access to the path 'C:\users\century11\Documents\My Music' is denied.               
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\Documents\My Music:String) [Ge  
+   t-ChildItem], UnauthorizedAccessException                                                        
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\Documents\My Pictures' is denied.            
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\Documents\My Pictures:String)   
+   [Get-ChildItem], UnauthorizedAccessException                                                     
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\Documents\My Videos' is denied.              
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\Documents\My Videos:String) [G  
+   et-ChildItem], UnauthorizedAccessException                                                       
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century11\Downloads                                                         
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+--rh--        8/30/2018   3:34 AM             30 secret_sauce                                       
+Get-ChildItem : Access to the path 'C:\users\century11\Local Settings' is denied.                   
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\Local Settings:String) [Get-Ch  
+   ildItem], UnauthorizedAccessException                                                            
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\My Documents' is denied.                     
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\My Documents:String) [Get-Chil  
+   dItem], UnauthorizedAccessException                                                              
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\NetHood' is denied.                          
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\NetHood:String) [Get-ChildItem  
+   ], UnauthorizedAccessException                                                                   
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\PrintHood' is denied.                        
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\PrintHood:String) [Get-ChildIt  
+   em], UnauthorizedAccessException                                                                 
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\Recent' is denied.                           
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\Recent:String) [Get-ChildItem]  
+   , UnauthorizedAccessException                                                                    
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\SendTo' is denied.                           
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\SendTo:String) [Get-ChildItem]  
+   , UnauthorizedAccessException                                                                    
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\Start Menu' is denied.                       
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\Start Menu:String) [Get-ChildI  
+   tem], UnauthorizedAccessException                                                                
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+Get-ChildItem : Access to the path 'C:\users\century11\Templates' is denied.                        
+At line:1 char:1                                                                                    
++ Get-ChildItem -Force -Recurse                                                                     
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                     
+    + CategoryInfo          : PermissionDenied: (C:\users\century11\Templates:String) [Get-ChildIt  
+   em], UnauthorizedAccessException                                                                 
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIte  
+   mCommand                                                                                         
+                                                                                                    
+                                                                                                    
+                                                                                                    
+PS C:\users\century11> cat C:\users\century11\Downloads\secretsauce.txt                             
+cat : Cannot find path 'C:\users\century11\Downloads\secretsauce.txt' because it does not exist.    
+At line:1 char:1                                                                                    
++ cat C:\users\century11\Downloads\secretsauce.txt                                                  
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                  
+    + CategoryInfo          : ObjectNotFound: (C:\users\centur...secretsauce.txt:String) [Get-Cont  
+   ent], ItemNotFoundException                                                                      
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand          
+                                                                                                    
+PS C:\users\century11> cat C:\users\century11\Downloads\secretsauce                                 
+cat : Cannot find path 'C:\users\century11\Downloads\secretsauce' because it does not exist.        
+At line:1 char:1                                                                                    
++ cat C:\users\century11\Downloads\secretsauce                                                      
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                      
+    + CategoryInfo          : ObjectNotFound: (C:\users\century11\Downloads\secretsauce:String) [G  
+   et-Content], ItemNotFoundException                                                               
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand          
+                                                                                                    
+PS C:\users\century11> cat C:\users\century11\Downloads\secret_sauce                                
+Congratulations. You found it!                                                                      
+PS C:\users\century11>      
+
+
+secret_sauce
+
+
+
+PS C:\users\century12\desktop> Get-ADDomainController | select *                                    
+                                                                                                    
+                                                                                                    
+ComputerObjectDN           : CN=UTW,OU=Domain Controllers,DC=underthewire,DC=tech                   
+DefaultPartition           : DC=underthewire,DC=tech                                                
+Domain                     : underthewire.tech                                                      
+Enabled                    : True                                                                   
+Forest                     : underthewire.tech                                                      
+HostName                   : utw.underthewire.tech                                                  
+InvocationId               : 09ee1897-2210-4ac9-989d-e19b4241e9c6                                   
+IPv4Address                : 192.99.167.156                                                         
+IPv6Address                :                                                                        
+IsGlobalCatalog            : True                                                                   
+IsReadOnly                 : False                                                                  
+LdapPort                   : 389                                                                    
+Name                       : UTW         
+
+utw_things
+
+
+
+                                                                                                
+PS C:\users\century12\desktop> Get-Item Env:PATH                                                    
+                                                                                                    
+Name                           Value                                                                
+----                           -----                                                                
+Path                           C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Window... 
+                                          
+
+i_authenticate_things
+
+
+PS C:\users\century12\desktop> Get-ADComputer utw -property Description
+
+
+Description       : i_authenticate
+DistinguishedName : CN=UTW,OU=Domain Controllers,DC=underthewire,DC=tech
+DNSHostName       : utw.underthewire.tech                                                           
+Enabled           : True                                                                            
+Name              : UTW                                                                             
+ObjectClass       : computer                                                                        
+ObjectGUID        : 5ca56844-bb73-4234-ac85-eed2d0d01a2e                                            
+SamAccountName    : UTW$                                                                            
+SID               : S-1-5-21-758131494-606461608-3556270690-1000                                    
+UserPrincipalName :                                                                                 
+                                                                                                    
+                                                                                                    
+                                                                                                    
+PS C:\users\century12\desktop> exit                                                                 
+Connection to century.underthewire.tech closed.                                                     
+mbcrump@KALI-STREAM-PC:~/src/mbcrump-twitch/src/utw-century$ ssh century13@century.underthewire.tech 
+
+
+shellapple                                                                                          
+enzymes                                                                                             
+PS C:\users\century13\desktop> $content.Count                                                       
+1                                                                                                   
+PS C:\users\century13\desktop> $content.count                                                       
+1                                                                                                   
+PS C:\users\century13\desktop> $content.split().count                                               
+755                                                                                                 
+PS C:\use
+
+
+PS C:\users\century9\desktop> $content = [IO.File]::ReadAllText(".\Word_File.txt")                  
+PS C:\users\century9\desktop> $content.split()["polos"]  
+
+
+                                                                                                    
+PS C:\users\century14\desktop> $content.split()['polo'].count                                       
+0                                                                                                   
+PS C:\users\century14\desktop> $content.split(' ').count                                         
+29981    
+
+(Select-String -Path "C:\users\century14\desktop\countpolos" -Pattern "polo" -AllMatches).Matches.Count
+
+C:\users\century14\desktop                                                           
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+-a----        8/30/2018  11:24 PM         202900 countpolos                                         
+                                                                 
+
+PS C:\users\century14\desktop> dir                                                                  
+                                                                                                    
+                                                                                                    
+    Directory: C:\users\century14\desktop                                                           
+                                                                                                    
+                                                                                                    
+Mode                LastWriteTime         Length Name                                               
+----                -------------         ------ ----                                               
+-a----        8/30/2018  11:24 PM         202900 countpolos                                         
+                                                                                                    
+                                                                                                    
+PS C:\users\century14\desktop> (Select-String -Path "C:\users\century14\desktop\countpolos" -Pattern "(\bpolo\b)" -AllMatches).Matches.Count                                                                 
+0                                                                                                   
+$test3 = (Select-String -Path "C:\users\century14\desktop\countpolos" -Pattern "polo" -AllMatches)
+
+
+
+
+
+158                                                                                                 
+PS C:\users\century14\desktop>                 
+
+
+
+PS C:\users\century9\desktop> $content = [IO.File]::ReadAllText("countpolos")                  
+PS C:\users\century9\desktop> $content.split()["polos"]  
+
