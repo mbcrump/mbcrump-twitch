@@ -1,3 +1,13 @@
+commands
+
+https://ohmyz.sh/
+https://github.com/romkatv/powerlevel10k
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+
+upgrade instructions
+
 echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" | sudo tee /etc/apt/sources.list
 
 sudo apt update && sudo apt -y full-upgrade
