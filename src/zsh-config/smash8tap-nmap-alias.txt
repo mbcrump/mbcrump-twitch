@@ -1,0 +1,1 @@
+alias scan='if ! [ -d ./nmap ]; then mkdir nmap; echo "**** Directory to save nmap scan created (nmap)****";echo "Starting scan with sudo nmap -sC -sV -oA nmap/inital -vv"; fi;sudo nmap -sC -sV -oA nmap/inital -vv'

@@ -1,0 +1,17 @@
+gdb ./challenge1
+set disassembly-flavor intel
+disass main
+
+
+http://10.10.31.219/?proxy=http%3A%2F%2Flist.hohoho%3A8080%2Fsearch.php%3Fname%3DMrMPHMusic
+
+http://list.hohoho:8080/search.php?name=MrMPHMusic
+
+ine. It seems that the web app works by taking this URL, making a request at the back-end, and then returning the result to the front-e
+
+
+http://10.10.31.219/?proxy=http%3A%2F%2Flist.hohoho%3A8080%2F
+
+http://list.hohoho:8080/
+
+Be good for goodness sake!
