@@ -1,4 +1,4 @@
-
+#! /usr/bin/python3
 # Notes
 # Host	irc.root-me.org
 # Protocol	IRC
@@ -10,29 +10,58 @@ import socket
 import sys
 import math
 
-server = "irc.root-me.org"       #settings
+ircsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server = "irc.root-me.org"  # settings
 channel = "#root-me_challenge"
-botnick = "rainbowren10"
+nick = "rainbowren10"
+botname = "Candy"
 
-irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # defines the socket
-print("connecting to:" + server)
-irc.connect((server, 6667))  # connects to the server
 
-irc.send(("JOIN " + channel + "\n").encode())
-irc.send(
-    ("USER rr irc.root-me.org root-me :Candy" + "\n").encode()
-)  # user authentication
-irc.send(("PRIVMSG nickserv :!ep1\r\n").encode())
-irc.send(("NICK " + botnick + "\n").encode())
+def joinchan(chan):  # join channel(s).
+    ircsock.send(bytes("JOIN " + chan + "\n", "UTF-8"))
+    ircmsg = ""
+    while ircmsg.find("End of /NAMES list.") == -1:
+        ircmsg = ircsock.recv(2048).decode("UTF-8")
+        ircmsg = ircmsg.strip('\n\r')
+        print(ircmsg)
 
-while True:
-    text = irc.recv(2020).decode()
-    print(text)  # print text to console
-    irc.send('PRIVMSG ' + channel + ' :!ep1 \r\n')
-    if text.find('/') != -1:    
-      squareroot = math.sqrt(text.split() [1])
-      answer = squareroot * text.split() [2]
-      print("FULL" + text)
-      print("SR" + squareroot)
-      print("AN" + answer)
-      #irc.send('PONG ' + text.split() [1] + '\r\n') #returnes 'PONG' back to the server (prevents pinging out!)
+
+def sendmsg(msg, target=channel):  # sends messages to the target.
+    ircsock.send(bytes("PRIVMSG " + target + " :" + msg + "\n", "UTF-8"))
+
+
+def joinserv(server):
+    # Here we connect to the server using the port 6667
+    ircsock.connect((server, 6667))
+    # We are basically filling out a form with this line and saying to set all the fields to the bot nickname.
+    ircsock.send(bytes("USER " + nick + " " + nick +
+                       " " + nick + " " + nick + "\n", "UTF-8"))
+    # assign the nick to the bot
+    ircsock.send(bytes("NICK " + nick + "\n", "UTF-8"))
+    ircmsg = ""
+    while ircmsg.find('MODE rainbowren10') == -1:
+        ircmsg = ircsock.recv(2048).decode("UTF-8")
+        ircmsg = ircmsg.strip('\n\r')
+        print(ircmsg)
+
+def main():
+    joinserv(server)
+    joinchan(channel)
+    sendmsg('!ep1', botname)
+    while True:
+        ircmsg = ircsock.recv(2048).decode("UTF-8")
+        ircmsg = ircmsg.strip("\r\n")
+        print(ircmsg)  # print text to console
+        if ircmsg.find('PRIVMSG') != -1:
+            print(ircmsg)
+            # sample message -
+            # :Candy!Candy@root-me.org PRIVMSG rainbowren10 :399 / 6768
+            msg1 = ircmsg.split(" ")
+            print(msg1[3][1:])
+            print(msg1[5])
+            squareroot = math.sqrt(int(msg1[3][1:]))
+            answer = round(squareroot * int(msg1[5]), 2)
+            print(squareroot)
+            print(answer)
+            sendmsg("!ep1 -rep " + str(answer), botname)
+main()
