@@ -12,4 +12,5 @@ data = x.json()
 value = data['data']['code']
 
 base = base64.b64decode(value)
+
 print ("Your hackthebox invite code is : " + base.decode('utf-8'))
