@@ -12,23 +12,27 @@ import math
 
 server = "irc.root-me.org"       #settings
 channel = "#root-me_challenge"
-botnick = "gamesys3"
+botnick = "rainbowren10"
 
-irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #defines the socket
-print ("connecting to: "+ server)
-irc.connect((server, 6667))                                                         #connects to the server
-irc.send(("NICK " + botnick + "\n").encode()) # sets nick#user authentication
-#irc.send(("PRIVMSG nickserv :iNOOPE\r\n").encode())    #auth
-irc.send(("JOIN "+ channel +"\n").encode())        #join the chan
+irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # defines the socket
+print("connecting to:" + server)
+irc.connect((server, 6667))  # connects to the server
 
-while 1:    #puts it in a loop
-   text=irc.recv(2040)  #receive the text
-   print (text)   #print text to console
+irc.send(("JOIN " + channel + "\n").encode())
+irc.send(
+    ("USER rr irc.root-me.org root-me :Candy" + "\n").encode()
+)  # user authentication
+irc.send(("PRIVMSG nickserv :!ep1\r\n").encode())
+irc.send(("NICK " + botnick + "\n").encode())
 
-   if text.find('/') != -1:    
+while True:
+    text = irc.recv(2020).decode()
+    print(text)  # print text to console
+    irc.send('PRIVMSG ' + channel + ' :!ep1 \r\n')
+    if text.find('/') != -1:    
       squareroot = math.sqrt(text.split() [1])
       answer = squareroot * text.split() [2]
-      print("FULL" + text.decode())
+      print("FULL" + text)
       print("SR" + squareroot)
       print("AN" + answer)
       #irc.send('PONG ' + text.split() [1] + '\r\n') #returnes 'PONG' back to the server (prevents pinging out!)
